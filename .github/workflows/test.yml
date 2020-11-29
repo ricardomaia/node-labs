@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: PING
-        run: ping 8.8.8.8
+        run: ping 8.8.8.8 -c 30
