@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: PING
-        run: ping ricardomaia.eti.br-c 5
+        run: ping ricardomaia.eti.br -c 5
