@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: PING
-        run: ping ricardomaia.eti.br -c 5
+        run: curl -sf ricardomaia.eti.br >/dev/null && if [ ! $? = 6 ]; then echo "is online"; else echo "is down" exit 1; fi
